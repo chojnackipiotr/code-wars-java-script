@@ -1,4 +1,14 @@
-# Zadania z **Code Wars** z moimi komentarzami
+# **Code Wars** tasks performed by me :)
+
+Some of the task contain my comments.
+I'm begginer JS dev from Poland.
+
+Kudos for Code Wars community for this tasks.
+Not only helps to improve my dev skills but also Math. 
+
+If you have any questions feel free to contact with me.
+
+All tasks you can find on https://www.codewars.com
 
 ## Task1
 
