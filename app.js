@@ -309,3 +309,24 @@ function rowSumOddNumbers(n) {
 console.log(rowSumOddNumbers(20));
 
 console.log('%c- Task 12 Build Tower -', 'padding:5px; color:white; background-color:navy; font-size:16px');
+
+function towerBuilder(nFloors) {
+  let length = nFloors*2-1;
+  let arr = [];
+  let middle = Math.floor(length/2);
+  for(let i=0; i<nFloors ;i++){
+     let str = '';
+    for(let j=0; j<length; j++){
+        if (j>middle+i||j<middle-i){
+          str+=' '
+        } else {
+          str+='*'
+        }
+      }
+    arr.push(str)  
+  }
+  return arr;
+}
+
+console.log(towerBuilder(3))
+console.log(towerBuilder(6))
