@@ -307,3 +307,5 @@ function rowSumOddNumbers(n) {
   return numbers.reduce((p,c)=>p+c);
 }
 console.log(rowSumOddNumbers(20));
+
+console.log('%c- Task 12 Build Tower -', 'padding:5px; color:white; background-color:navy; font-size:16px');
