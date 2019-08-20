@@ -330,3 +330,21 @@ function towerBuilder(nFloors) {
 
 console.log(towerBuilder(3))
 console.log(towerBuilder(6))
+
+console.log('%c- Task13 FIXME: Get Full Name -', 'padding:5px; color:white; background-color:navy; font-size:16px');
+
+class Dinglemouse{
+
+  constructor( firstName, lastName ){
+    this.firstName=firstName;
+    this.lastName=lastName;
+  }
+  
+  getFullName(){
+    let space = this.firstName&&this.lastName&&" ";
+    return this.firstName+space+this.lastName
+  }
+  
+}
+
+console.log(new Dinglemouse("Clint", "Eastwood").getFullName())
