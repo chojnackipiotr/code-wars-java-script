@@ -348,3 +348,23 @@ class Dinglemouse{
 }
 
 console.log(new Dinglemouse("Clint", "Eastwood").getFullName())
+
+console.log('%c- Task14 Kebabize -', 'padding:5px; color:white; background-color:navy; font-size:16px');
+
+let kebabize = str => {
+  let kebabizeStr = '';
+  str.split('').forEach((letter, index) => {
+    if (isNaN(+letter)) {
+      if (letter === letter.toUpperCase() && kebabizeStr.length > 0){
+        kebabizeStr += `-${letter.toLowerCase()}`
+      } else {
+        kebabizeStr += letter.toLowerCase()
+      }
+    }
+  })
+  return kebabizeStr
+}
+console.log(kebabize('camelsHave3Humps'));
+console.log(kebabize('camelsHaveThreeHumps'));
+console.log(kebabize('Hvdr'));
+console.log(kebabize('3Bvdr'));
