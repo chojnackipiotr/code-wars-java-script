@@ -368,3 +368,35 @@ console.log(kebabize('camelsHave3Humps'));
 console.log(kebabize('camelsHaveThreeHumps'));
 console.log(kebabize('Hvdr'));
 console.log(kebabize('3Bvdr'));
+
+console.log('%c- Task15 Meeting -', 'padding:5px; color:white; background-color:navy; font-size:16px');
+let list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+
+const meeting = (guests) => {
+  let newList = '';
+  guests.split(';')
+  .map(el =>el.toUpperCase()
+  .split(':'))
+  .sort((a,b)=>{
+    if (a[1]===b[1]){
+      return a[0].localeCompare(b[0])
+    } else {
+      return a[1].localeCompare(b[1])
+    }
+  })
+  .forEach(el => {
+    newList += `(${el[1]}, ${el[0]})`
+  });
+  return newList
+}
+
+console.log(meeting(list));
+
+// First solution on codewars.com
+// function meeting(s) {
+//   let string = s.toUpperCase().split(';')
+//                 .map(x => x.split(':').reverse().join(', '))
+//                 .sort()
+//                 .join(')(')
+//   return '(' + string + ')'
+// }

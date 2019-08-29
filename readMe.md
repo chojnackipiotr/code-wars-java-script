@@ -221,3 +221,31 @@ kebabize('camelsHave3Humps') // camels-have-humps
 Notes:
 
 the returned string should only contain lowercase letters
+
+## Task 15 Meeting
+
+url: https://www.codewars.com/kata/59df2f8f08c6cec835000012/train/javascript
+
+John has invited some friends. His list is:
+
+```
+s = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:Tornbull;Raphael:Corwill;Alfred:Corwill";
+```
+
+Could you make a program that
+
+1. makes this string uppercase
+2. gives it sorted in alphabetical order by last name.
+3. When the last names are the same, sort them by first name. 
+4. Last name and first name of a guest come in the result between parentheses separated by a comma.
+
+So the result of function meeting(s) will be:
+
+```
+"(CORWILL, ALFRED)(CORWILL, FRED)(CORWILL, RAPHAEL)(CORWILL, WILFRED)(TORNBULL, BARNEY)(TORNBULL, BETTY)(TORNBULL, BJON)"
+```
+
+It can happen that in two distinct families with the same family name two people have the same first name too.
+
+Notes
+You can see another examples in the "Sample tests".
